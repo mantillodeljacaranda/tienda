@@ -4,12 +4,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tienda</title>
+    <title>Mantillo del Jacarandá | Semillas Nativas de Argentina</title>
+
+    <!-- Tipografías de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Enlace al archivo CSS externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Semillas</h1>
+
+    <!-- Elementos botánicos animados de fondo -->
+    <div class="background-decorations">
+        <div class="seed-particle" style="top: 10%; left: 5%; animation-delay: 0s;"></div>
+        <div class="seed-particle" style="top: 25%; right: 8%; animation-delay: 2.5s; transform: scale(1.4);"></div>
+        <div class="seed-particle" style="top: 55%; left: 12%; animation-delay: 1.2s; transform: scale(0.8);"></div>
+        <div class="seed-particle" style="top: 75%; right: 15%; animation-delay: 3.8s; transform: scale(1.2);"></div>
+        <div class="seed-particle" style="top: 90%; left: 30%; animation-delay: 0.7s;"></div>
+    </div>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="logo.png" alt="Mantillo del Jacarandá" class="logo-img">
+        </a>
+        <div class="nav-links">
+            <a href="#catalogo">Catálogo</a>
+            <a href="#filosofia">Nuestra Filosofía</a>
+            <a href="#especies">Especies</a>
+            <a href="https://wa.me/?text=Hola%20Mantillo%20del%20Jacarand%C3%A1%2C%20quisiera%20consultar%20sobre%20las%20semillas%20nativas"
+                target="_blank" rel="noopener" class="btn-primary"
+                style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Contactar</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">Germinando Biodiversidad Nativa</span>
+            <h1 class="hero-title"><em>Siembra la raíz originaria del paisaje argentino</em></h1>
+            <p class="hero-subtitle">
+                Preservamos la riqueza biológica de nuestro suelo recolectando semillas puras de especies autóctonas.
+                Convierte tu espacio en un refugio vivo para la fauna local.
+            </p>
+            <div class="hero-cta-group">
+                <a href="#catalogo" class="btn-primary">Ver Catálogo Nativo</a>
+                <a href="https://wa.me/?text=Hola%20Mantillo%20del%20Jacarand%C3%A1%2C%20me%20gustar%C3%ADa%20hacer%20una%20consulta%20por%20WhatsApp"
+                    target="_blank" rel="noopener" class="btn-whatsapp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+                    </svg>
+                    Consultar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Catálogo -->
+    <section id="catalogo" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Colección de Semillas Autóctonas</h2>
+            <p class="section-subtitle">Recolectadas artesanalmente respetando los tiempos biológicos y el hábitat
+                natural de cada especie.</p>
+        </div>
+
+        <div class="grid">
+            <!-- Tarjeta 1: Jacarandá -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <span class="card-badge badge-jacaranda">Emblemática</span>
+                    <img class="card-img" src="imagenes/jacaranda.webp" alt="Jacarandá en flor">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Jacaranda mimosifolia</span>
+                    <h3 class="card-title">Jacarandá</h3>
+                    <p class="card-desc">Árbol icónico de majestuosa floración violeta. Esencial para aportar sombra,
+                        belleza estética y atraer polinizadores urbanos.</p>
+                    <div class="card-footer">
+                        <span class="region-pill">NOA y Chaco</span>
+                        <a href="https://wa.me/?text=Hola!%20Quiero%20consultar%20por%20semillas%20de%20Jacarand%C3%A1"
+                            target="_blank" rel="noopener" class="btn-whatsapp-sm">Pedir</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tarjeta 2: Ceibo -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <span class="card-badge badge-ceibo">Flor Nacional</span>
+                    <img class="card-img" src="imagenes/ceibo.png" alt="Flor de Ceibo">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Erythrina crista-galli</span>
+                    <h3 class="card-title">Ceibo</h3>
+                    <p class="card-desc">Flor Nacional Argentina. Arbusto/árbol de flores carmesí intensas, perfecto
+                        para zonas húmedas y atracción de picaflores.</p>
+                    <div class="card-footer">
+                        <span class="region-pill">Litoral y Ribera</span>
+                        <a href="https://wa.me/?text=Hola!%20Quiero%20consultar%20por%20semillas%20de%20Ceibo"
+                            target="_blank" rel="noopener" class="btn-whatsapp-sm">Pedir</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tarjeta 3: Espinillo -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <span class="card-badge badge-espinillo">Aromática</span>
+                    <img class="card-img" src="imagenes/espinillo.jpg" alt="Espinillo">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Acacia caven / Aromito</span>
+                    <h3 class="card-title">Espinillo / Aromito</h3>
+                    <p class="card-desc">Especie ultra resistente. Inflorescencias amarillas muy perfumadas que anuncian
+                        el inicio de la primavera en el monte.</p>
+                    <div class="card-footer">
+                        <span class="region-pill">Espinal y Centro</span>
+                        <a href="https://wa.me/?text=Hola!%20Quiero%20consultar%20por%20semillas%20de%20Espinillo"
+                            target="_blank" rel="noopener" class="btn-whatsapp-sm">Pedir</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tarjeta 4: Jarilla -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <span class="card-badge badge-espinillo">Medicinal</span>
+                    <img class="card-img" src="imagenes/jarilla.jpg" alt="Jarilla del monte">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Larrea divaricata</span>
+                    <h3 class="card-title">Jarilla del Monte</h3>
+                    <p class="card-desc">Arbusto característico del monte árido. Posee un aroma resinoso inconfundible y
+                        gran resistencia a sequías extremas.</p>
+                    <div class="card-footer">
+                        <span class="region-pill">Cuyo y Patagonia</span>
+                        <a href="https://wa.me/?text=Hola!%20Quiero%20consultar%20por%20semillas%20de%20Jarilla"
+                            target="_blank" rel="noopener" class="btn-whatsapp-sm">Pedir</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tarjeta 5: Lapacho Rosado -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <span class="card-badge badge-ceibo">Espectacular</span>
+                    <img class="card-img" src="imagenes/lapacho.jpg" alt="Lapacho Rosado">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Handroanthus impetiginosus</span>
+                    <h3 class="card-title">Lapacho Rosado</h3>
+                    <p class="card-desc">Florece masivamente en copas rosadas antes de que aparezcan sus hojas. Una de
+                        las mayores joyas ornamentales del norte.</p>
+                    <div class="card-footer">
+                        <span class="region-pill">Norte Argentino</span>
+                        <a href="https://wa.me/?text=Hola!%20Quiero%20consultar%20por%20semillas%20de%20Lapacho"
+                            target="_blank" rel="noopener" class="btn-whatsapp-sm">Pedir</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tarjeta 6: Mburucuyá -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <span class="card-badge badge-jacaranda">Trepadora</span>
+                    <img class="card-img" src="imagenes/mburucuya.jpg" alt="Mburucuyá / Pasionaria">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Passiflora caerulea</span>
+                    <h3 class="card-title">Mburucuyá / Pasionaria</h3>
+                    <p class="card-desc">Enredadera nativa de flores intrincadas. Alimento exclusivo para la oruga de la
+                        hermosa mariposa Espejitos.</p>
+                    <div class="card-footer">
+                        <span class="region-pill">Norte y Centro</span>
+                        <a href="https://wa.me/?text=Hola!%20Quiero%20consultar%20por%20semillas%20de%20Mburucuya"
+                            target="_blank" rel="noopener" class="btn-whatsapp-sm">Pedir</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sección Filosofía -->
+    <section id="filosofia" class="section">
+        <div class="about-card">
+            <div class="about-content">
+                <h2 class="section-title">El valor del Mantillo</h2>
+                <p class="about-text">
+                    El <strong>mantillo</strong> es la capa orgánica fértil que protege la tierra bajo las copas de los
+                    árboles, donde cae la hoja de Jacarandá y nace la nueva vida.
+                </p>
+                <p class="about-text">
+                    En <strong>Mantillo del Jacarandá</strong> no vendemos simples semillas: promovemos la
+                    reconstrucción de los corredores biológicos de Argentina, devolviéndole a la tierra sus especies
+                    originarias.
+                </p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-desc">Semillas Autóctonas</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">0%</span>
+                    <span class="stat-desc">Químicos ni Pesticidas</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">+15</span>
+                    <span class="stat-desc">Especies Nativas</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">Directo</span>
+                    <span class="stat-desc">Asesoramiento Humano</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Call to Action Final -->
+    <section id="especies" class="section" style="text-align: center; padding-bottom: 7rem;">
+        <div class="cta-banner">
+            <h2 class="section-title" style="margin-bottom: 1rem;">¿Tenés dudas sobre qué sembrar?</h2>
+            <p style="max-width: 600px; margin: 0 auto 2.5rem auto; opacity: 0.85; font-size: 1.05rem;">
+                Te aconsejamos sin compromiso sobre las mejores especies autóctonas según la región donde vivas y el
+                tipo de suelo que tengas.
+            </p>
+            <a href="https://wa.me/?text=Hola%20Mantillo%20del%20Jacarand%C3%A1%2C%20necesito%20asesoramiento%20para%20elegir%20mis%20semillas"
+                target="_blank" rel="noopener" class="btn-whatsapp" style="font-size: 1.1rem; padding: 1.1rem 2.2rem;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+                </svg>
+                Asesorarme por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Botón Flotante Fijo de WhatsApp -->
+    <a href="https://wa.me/?text=Hola%20Mantillo%20del%20Jacarand%C3%A1%2C%20quiero%20hacer%20una%20consulta"
+        target="_blank" rel="noopener" class="float-wa" title="Escríbenos a WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+        </svg>
+    </a>
+
+    <!-- Footer Completo con Redes Sociales -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Columna 1: Logo y Filosofía -->
+            <div class="footer-col footer-brand">
+                <img src="logo.png" alt="Mantillo del Jacarandá" class="footer-logo">
+                <p class="footer-description">
+                    Difusión, conservación y comercialización de semillas autóctonas de Argentina. Sembrando el futuro
+                    de nuestro paisaje originario.
+                </p>
+            </div>
+
+            <!-- Envoltorio para Agrupar Navegación y Contacto en 2 columnas en móvil -->
+            <div class="footer-col-group">
+                <!-- Columna 2: Navegación Rápida -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="#catalogo">Catálogo</a></li>
+                        <li><a href="#filosofia">Filosofía</a></li>
+                        <li><a href="#especies">Especies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Contacto y Redes Sociales -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contacto & Redes</h4>
+                    <p class="footer-location"> 📍Argentina (Envíos a todo el país)</p>
+
+                    <!-- Botones de redes sociales -->
+                    <div class="social-icons">
+                        <!-- Instagram -->
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn"
+                            title="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <!-- Email -->
+                        <a href="mailto:contacto@mantillodeljacaranda.com" class="social-btn"
+                            title="Correo Electrónico">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- Cierra correctamente .footer-col-group -->
+
+        </div> <!-- Cierra correctamente .footer-container -->
+
+        <!-- Sub-footer / Copyright (Ahora ubicado afuera de las columnas y de la grilla) -->
+        <div class="footer-bottom">
+            <p>© Mantillo del Jacarandá. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>
